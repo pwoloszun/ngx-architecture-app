@@ -1,0 +1,23 @@
+// TODO 1:
+1) user feature:
+- components: items-list
+- pages: cart, my-profile, preferences
+- services: items, user-settings
+
+Dependencies:
+- pages: cart, preferences should render items-list component
+- pages: cart, preferences should use items service
+- pages: preferences, my-profile should use user-settings & log services
+
+
+
+// TODO 2:
+2) admin feature:
+- components: user-list
+- pages: reports, settings, user-management
+- services: admin-settings
+
+Dependencies:
+- pages: user-management, reports should render user-list component
+- pages: user-management, reports, settings should use auth service
+- pages: settings, reports should use admin-settings & global-error-handler services

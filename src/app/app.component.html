@@ -1,0 +1,14 @@
+<div>
+  <nav>
+    <h3>Menu</h3>
+    <ul>
+      <li *ngFor="let link of mainMenuLinks">
+        <a [routerLink]="[link.url]">{{link.text}}</a>
+      </li>
+    </ul>
+  </nav>
+  <div>
+    <h3>Content</h3>
+    <router-outlet></router-outlet>
+  </div>
+</div>
